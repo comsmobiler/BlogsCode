@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BlogsCode_SmobilerForm</RootNamespace>
     <AssemblyName>BlogsCode_SmobilerForm</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>
@@ -41,6 +43,7 @@
     <ApplicationIcon>Smobiler_128.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Smobiler.Design" />
     <Reference Include="Smobiler.Utility" />
     <Reference Include="Smobiler.Core" />
@@ -56,6 +59,133 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBClass.cs" />
+    <Compile Include="democontrols.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="democontrols.designer.cs">
+      <DependentUpon>democontrols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ABYSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ABYSearch.designer.cs">
+      <DependentUpon>ABYSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CYSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\CYSearch.designer.cs">
+      <DependentUpon>CYSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DDSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\DDSearch.designer.cs">
+      <DependentUpon>DDSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ElmSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ElmSearch.designer.cs">
+      <DependentUpon>ElmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GZSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\GZSearch.designer.cs">
+      <DependentUpon>GZSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JDSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\JDSearch.designer.cs">
+      <DependentUpon>JDSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeepSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\KeepSearch.designer.cs">
+      <DependentUpon>KeepSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KLSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\KLSearch.designer.cs">
+      <DependentUpon>KLSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MYSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MYSearch.designer.cs">
+      <DependentUpon>MYSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RRSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\RRSearch.designer.cs">
+      <DependentUpon>RRSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WXSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\WXSearch.designer.cs">
+      <DependentUpon>WXSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WYSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\WYSearch.designer.cs">
+      <DependentUpon>WYSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InitForm.Designer.cs">
+      <DependentUpon>InitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\XCListTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\XCListTemplate.designer.cs">
+      <DependentUpon>XCListTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XCSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\XCSearch.designer.cs">
+      <DependentUpon>XCSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XCSearch_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\XCSearch_1.designer.cs">
+      <DependentUpon>XCSearch_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ZHSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ZHSearch.designer.cs">
+      <DependentUpon>ZHSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ZHSearch_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ZHSearch_1.designer.cs">
+      <DependentUpon>ZHSearch_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ZHTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\ZHTemplate.designer.cs">
+      <DependentUpon>ZHTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ZRSearch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ZRSearch.designer.cs">
+      <DependentUpon>ZRSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGenerateQRcode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +210,96 @@
     <Compile Include="frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Layouts\ABYLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\ABYLayout.designer.cs">
+      <DependentUpon>ABYLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\CYLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\CYLayout.designer.cs">
+      <DependentUpon>CYLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\DDLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\DDLayout.designer.cs">
+      <DependentUpon>DDLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ElmLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\ElmLayout.designer.cs">
+      <DependentUpon>ElmLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\GZLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\GZLayout.designer.cs">
+      <DependentUpon>GZLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\JDLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\JDLayout.designer.cs">
+      <DependentUpon>JDLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\KeepLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\KeepLayout.designer.cs">
+      <DependentUpon>KeepLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\KLLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\KLLayout.designer.cs">
+      <DependentUpon>KLLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\MYLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\MYLayout.designer.cs">
+      <DependentUpon>MYLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\RRLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\RRLayout.designer.cs">
+      <DependentUpon>RRLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\WXLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\WXLayout.designer.cs">
+      <DependentUpon>WXLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\WYLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\WYLayout.designer.cs">
+      <DependentUpon>WYLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\XCGRIDTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\XCGRIDTemplate.designer.cs">
+      <DependentUpon>XCGRIDTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ZRLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\ZRLayout.designer.cs">
+      <DependentUpon>ZRLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListLayout.designer.cs">
+      <DependentUpon>ListLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="MobileGlobal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +313,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SelectData.cs" />
+    <Compile Include="SelectDataPro.cs" />
+    <Compile Include="SelectItem.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="SmobilerForm1.cs">
       <SubType>Component</SubType>
@@ -114,6 +337,69 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="democontrols.resx">
+      <DependentUpon>democontrols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ABYSearch.resx">
+      <DependentUpon>ABYSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CYSearch.resx">
+      <DependentUpon>CYSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DDSearch.resx">
+      <DependentUpon>DDSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ElmSearch.resx">
+      <DependentUpon>ElmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GZSearch.resx">
+      <DependentUpon>GZSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JDSearch.resx">
+      <DependentUpon>JDSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeepSearch.resx">
+      <DependentUpon>KeepSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KLSearch.resx">
+      <DependentUpon>KLSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MYSearch.resx">
+      <DependentUpon>MYSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RRSearch.resx">
+      <DependentUpon>RRSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WXSearch.resx">
+      <DependentUpon>WXSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WYSearch.resx">
+      <DependentUpon>WYSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitForm.resx">
+      <DependentUpon>InitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\XCListTemplate.resx">
+      <DependentUpon>XCListTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XCSearch.resx">
+      <DependentUpon>XCSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XCSearch_1.resx">
+      <DependentUpon>XCSearch_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ZHSearch.resx">
+      <DependentUpon>ZHSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ZHSearch_1.resx">
+      <DependentUpon>ZHSearch_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ZHTemplate.resx">
+      <DependentUpon>ZHTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ZRSearch.resx">
+      <DependentUpon>ZRSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +411,51 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ABYLayout.resx">
+      <DependentUpon>ABYLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\CYLayout.resx">
+      <DependentUpon>CYLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\DDLayout.resx">
+      <DependentUpon>DDLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ElmLayout.resx">
+      <DependentUpon>ElmLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\GZLayout.resx">
+      <DependentUpon>GZLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\JDLayout.resx">
+      <DependentUpon>JDLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\KeepLayout.resx">
+      <DependentUpon>KeepLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\KLLayout.resx">
+      <DependentUpon>KLLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\MYLayout.resx">
+      <DependentUpon>MYLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\RRLayout.resx">
+      <DependentUpon>RRLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\WXLayout.resx">
+      <DependentUpon>WXLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\WYLayout.resx">
+      <DependentUpon>WYLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\XCGRIDTemplate.resx">
+      <DependentUpon>XCGRIDTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\ZRLayout.resx">
+      <DependentUpon>ZRLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListLayout.resx">
+      <DependentUpon>ListLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,6 +481,7 @@
   <ItemGroup>
     <Content Include="Smobiler_128.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
