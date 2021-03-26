@@ -80,6 +80,7 @@ namespace SelectDemo.Forms
             sds.Add(d2);
             sds.Add(d3);
 
+            //弹出KLLayout
             KLLayout uc = new KLLayout(sds, keyLab.Text);
             DialogOptions footerDialogOptions;
             footerDialogOptions = new DialogOptions(LayoutJustifyAlign.FlexStart, System.Drawing.Color.Transparent, Smobiler.Core.Controls.Padding.Empty, true);

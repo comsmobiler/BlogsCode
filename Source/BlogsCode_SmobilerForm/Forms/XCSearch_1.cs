@@ -67,7 +67,7 @@ namespace SelectDemo.Forms
                 if (data.ishow == true)
                 {
                     hisPanel.Controls.Add(p1);
-
+                    //添加“搜索推荐”下按钮
                     for (int i = 0; i < data.items.Length; i++)
                     {
                         System.Drawing.Color backcolor = System.Drawing.Color.Transparent;
@@ -122,6 +122,7 @@ namespace SelectDemo.Forms
                     disPanel.Controls.Add(p1);
                     if (data.shape == 0)
                     {
+                        //添加listview
                         ListView listView = new ListView()
                         {
                             Size = new System.Drawing.Size(0, 0),
@@ -135,6 +136,7 @@ namespace SelectDemo.Forms
                     }
                     else
                     {
+                        //添加gridview
                         GridView gridView = new GridView()
                         {
                             Size = new System.Drawing.Size(0, 0),

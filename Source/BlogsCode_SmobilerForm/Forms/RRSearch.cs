@@ -52,6 +52,8 @@ namespace SelectDemo.Forms
             List<SelectData> sds = new List<SelectData>();
             sds.Add(d1);
             sds.Add(d2);
+            
+            //弹出RRLayout
             RRLayout uc = new RRLayout (sds,keyLab.Text);
             DialogOptions footerDialogOptions;
             footerDialogOptions = new DialogOptions(LayoutJustifyAlign.FlexStart, System.Drawing.Color.Transparent, Smobiler.Core.Controls.Padding.Empty, true);

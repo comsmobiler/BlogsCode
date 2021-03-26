@@ -17,7 +17,7 @@ namespace SelectDemo
             InitializeComponent();
         }
 
-        private DBClass dBClass = new DBClass();
+        private DBClass dBClass = new DBClass();//DBClass 数据库查询类
         private void panel2_Press(object sender, EventArgs e)
         {
             ShowElmLayout();
@@ -41,9 +41,12 @@ namespace SelectDemo
             List<SelectData> sds = new List<SelectData>();
             sds.Add(d1);
             sds.Add(d2);
+            
+            // 实例化ElmLayout
             ElmLayout uc = new ElmLayout(sds, keyLab.Text);
             DialogOptions footerDialogOptions;
             footerDialogOptions = new DialogOptions(LayoutJustifyAlign.FlexStart, System.Drawing.Color.Transparent, Smobiler.Core.Controls.Padding.Empty, true);
+            //在窗体中弹出ElmLayout
             ShowDialog(uc, footerDialogOptions, (obj, args) =>
             {
                 if (uc.ShowResult == ShowResult.Yes)

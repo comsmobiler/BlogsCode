@@ -22,18 +22,10 @@ namespace SelectDemo.Layouts
             InitializeComponent();
             GethHistory(selectDatas, defalutStr);
         }
-        private void panel2_Press(object sender, EventArgs e)
-        {
-
-        }
-
-
-
         private void CloseDialog_Press(object sender, EventArgs e)
         {
             this.ShowResult = ShowResult.No;
             this.Close();
-
         }
         private void GethHistory(List<SelectData> selectDatas, string defaultstr)
         {
@@ -127,26 +119,21 @@ namespace SelectDemo.Layouts
         public string currentkey;
         public string querystr;
 
+        /// <summary>
+        /// 清空历史按钮事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteButtonPress(object sender, EventArgs e)
         {
             hisPanel.Controls.Clear();
         }
-
 
         private void SelectButtonPress(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             this.ShowResult = ShowResult.Yes;
             currentkey = btn.Text;
-            //将查询关键字替换进去
-            querystr = @"SELECT * FROM `testdata` where data like '%"+currentkey+"%'";
-            this.Close();
-        }
-        private void SelectPanelPress(object sender, EventArgs e)
-        {
-            Panel pan = (Panel)sender;
-            this.ShowResult = ShowResult.Yes;
-            currentkey = pan.Tag.ToString();
             //将查询关键字替换进去
             querystr = @"SELECT * FROM `testdata` where data like '%"+currentkey+"%'";
             this.Close();

@@ -68,7 +68,7 @@ namespace SelectDemo.Layouts
                     Wrap = LayoutWrap.Wrap
                 };
                 if (data.ishow == true)
-                {   //添加删除按钮
+                {   //添加清除记录按钮
                     ImageButton imgbtn = new ImageButton()
                     {
                         ImageType = ImageEx.ImageStyle.FontIcon,
@@ -76,7 +76,7 @@ namespace SelectDemo.Layouts
                         IconColor = System.Drawing.Color.Silver,
                         Size = new System.Drawing.Size(65, 25),
                         ForeColor = System.Drawing.Color.Silver,
-                        Text="删除记录",
+                        Text="清除记录",
                         ImageDirection= Smobiler.Core.Controls.Direction.Left,
                         ImgTextRatio=new Ratio(2,8),
                         FontSize=13
@@ -107,7 +107,7 @@ namespace SelectDemo.Layouts
                     for (int i = 0; i < data.items.Length; i++)
                     {
                         if (i < 3)
-                        {
+                        {// 带图标的按钮
                             Panel tem = new Panel()
                             {
                                 Size = new System.Drawing.Size(80, 30),

@@ -33,7 +33,9 @@ namespace SelectDemo.Layouts
         }
         private void GethHistory(List<SelectDataPro> selectDatas, string defaultstr)
         {
-            this.KeyLab.Text = defaultstr;
+            this.KeyLab.Text = defaultstr;//搜索框文本
+
+
             foreach (SelectDataPro data in selectDatas)
             {
                 FontIcon fontIcon = new FontIcon()
@@ -96,8 +98,9 @@ namespace SelectDemo.Layouts
                 {
                     length = data.items.Length;
                 }
-                if (data.ishow == true)
+                if (data.ishow == true)//通过判断ishow 属性，区分按钮样式
                 {
+                    // ishow=true，“按钮”则是由panel和两个label组成
                     for (int i = 0; i < length; i++)
                     {
                         Panel tem = new Panel()
@@ -109,7 +112,7 @@ namespace SelectDemo.Layouts
                             Size = new System.Drawing.Size(0, 0),
                             Padding = new Padding(8),
                             Margin = new Margin(0, 4, 4, 4),
-                            Tag = data.items[i].text,
+                            Tag = data.items[i].text,//此Tag用于标记panel内label文本
                             Touchable = true,
                             Layout = LayoutPosition.Relative
                         };
@@ -127,7 +130,7 @@ namespace SelectDemo.Layouts
                             Size = new System.Drawing.Size(0, 0),
                             FontSize = 13
                         };
-                        tem.Press += this.SelectPanelPress;
+                        tem.Press += this.SelectPanelPress;//绑定事件
                         tem.Controls.Add(temlab);
                         tem.Controls.Add(temlab1);
                         p2.Controls.Add(tem);
@@ -150,7 +153,7 @@ namespace SelectDemo.Layouts
                             BorderRadius = 4,
                             Margin = new Margin(0, 4, 8, 4)
                         };
-                        btn.Press += this.SelectButtonPress;
+                        btn.Press += this.SelectButtonPress;//绑定事件
                         p2.Controls.Add(btn);
                         disPanel.Controls.Add(p2);
                     }

@@ -32,9 +32,10 @@ namespace SelectDemo.Layouts
             this.Close();
 
         }
+
         private void GethHistory(List<SelectData> selectDatas,string defaultstr)
         {
-            this.KeyLab.Text = defaultstr;
+            this.KeyLab.Text = defaultstr;//设置搜索框文本
             foreach (SelectData data in selectDatas)
             {
                 Label label1 = new Label()
@@ -64,7 +65,7 @@ namespace SelectDemo.Layouts
                     Wrap = LayoutWrap.Wrap
                 };
                 if (data.ishow == true)
-                {   //添加删除按钮
+                {   //添加历史搜索删除按钮
                     ImageButton imgbtn = new ImageButton()
                     {
                         ImageType = ImageEx.ImageStyle.FontIcon,
@@ -117,7 +118,7 @@ namespace SelectDemo.Layouts
             }
         }
        
-
+        //清除历史搜索记录
         private void DeleteButtonPress(object sender, EventArgs e)
         {
             hisPanel.Controls.Clear();

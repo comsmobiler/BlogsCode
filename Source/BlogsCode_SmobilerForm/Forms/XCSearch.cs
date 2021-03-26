@@ -81,11 +81,12 @@ namespace SelectDemo.Forms
                 shape=1,
                 ishow = false
             };
-
             List<SelectDataPro> sds = new List<SelectDataPro>();
             sds.Add(d1);
             sds.Add(d2);
             sds.Add(d3);
+            
+            //跳转窗体
             XCLayout form = new XCLayout(sds, keyLab.Text);
             Show(form, (obj, args) =>
              {

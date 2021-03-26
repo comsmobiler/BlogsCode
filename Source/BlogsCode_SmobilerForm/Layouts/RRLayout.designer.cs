@@ -53,8 +53,6 @@ namespace SelectDemo.Layouts
             this.panel2.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(0, 30);
-            this.panel2.Touchable = true;
-            this.panel2.Press += new System.EventHandler(this.panel2_Press);
             // 
             // fontIcon1
             // 

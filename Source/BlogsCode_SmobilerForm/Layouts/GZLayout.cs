@@ -64,7 +64,7 @@ namespace SelectDemo.Layouts
                     Wrap = LayoutWrap.Wrap
                 };
                 if (data.ishow == true)
-                {   //添加删除按钮
+                {   //添加历史搜索记录 删除按钮
                     ImageButton imgbtn = new ImageButton()
                     {
                         ImageType = ImageEx.ImageStyle.FontIcon,
@@ -140,15 +140,6 @@ namespace SelectDemo.Layouts
             Button btn = (Button)sender;
             this.ShowResult = ShowResult.Yes;
             currentkey = btn.Text;
-            //将查询关键字替换进去
-            querystr = @"SELECT * FROM `testdata` where data like '%"+currentkey+"%'";
-            this.Close();
-        }
-        private void SelectPanelPress(object sender, EventArgs e)
-        {
-            Panel pan = (Panel)sender;
-            this.ShowResult = ShowResult.Yes;
-            currentkey = pan.Tag.ToString();
             //将查询关键字替换进去
             querystr = @"SELECT * FROM `testdata` where data like '%"+currentkey+"%'";
             this.Close();

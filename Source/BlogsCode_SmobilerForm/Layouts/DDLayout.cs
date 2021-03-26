@@ -33,7 +33,7 @@ namespace SelectDemo.Layouts
         }
         private void GethHistory(List<SelectData> selectDatas, string defaultstr)
         {
-            this.KeyLab.Text = defaultstr;
+            this.KeyLab.Text = defaultstr;//设置搜索框文本
 
             //添加搜索历史
             for (int i = 0; i < selectDatas[0].items.Length; i++)
@@ -108,7 +108,7 @@ namespace SelectDemo.Layouts
                 for (int i = 0; i < data.items.Length; i++)
                 {
                     if (i < 5)
-                    {
+                    {//原型上前5个按钮带有图标，用panel，fonticon，label组合成“按钮”
                         Panel tem = new Panel()
                         {
                             Size = new System.Drawing.Size(0, 0),

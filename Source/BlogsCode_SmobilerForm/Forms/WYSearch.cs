@@ -21,9 +21,6 @@ namespace SelectDemo.Forms
         {
             this.Close();
         } 
-        private void JDSearch_Load(object sender, EventArgs e)
-        {
-        }
         /// <summary>
         /// 搜索框点击事件
         /// </summary>

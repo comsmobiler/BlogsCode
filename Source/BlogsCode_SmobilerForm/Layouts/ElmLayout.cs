@@ -36,6 +36,7 @@ namespace SelectDemo.Layouts
             this.KeyLab.Text = defaultstr;
             foreach (SelectData data in selectDatas)
             {
+                //该label用于显示“历史搜索”文字
                 Label label1 = new Label()
                 {
                     Text = data.title,
@@ -65,7 +66,8 @@ namespace SelectDemo.Layouts
                     Wrap = LayoutWrap.Wrap
                 };
                 if (data.ishow == true)
-                {   //添加删除按钮
+                {   
+                    //添加“历史搜索”后的删除按钮
                     ImageButton imgbtn = new ImageButton()
                     {
                         ImageType = ImageEx.ImageStyle.FontIcon,
@@ -96,6 +98,7 @@ namespace SelectDemo.Layouts
                 }
                 else
                 {
+                    //原型上“超级发布30减20起 按钮”
                     Button spbtn = new Button()
                     {
                         Text = data.items[0],
@@ -131,11 +134,20 @@ namespace SelectDemo.Layouts
             }
         }
 
-
+        /// <summary>
+        /// 清空历史搜索记录
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteButtonPress(object sender, EventArgs e)
         {
             hisPanel.Controls.Clear();
         }
+        /// <summary>
+        /// 搜索内容查询
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectButtonPress(object sender, EventArgs e)
         {
             Button btn = (Button)sender;

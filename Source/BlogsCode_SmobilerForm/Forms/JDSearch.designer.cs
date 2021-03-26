@@ -66,7 +66,7 @@ namespace SelectDemo.Forms
             // fontIcon1
             // 
             this.fontIcon1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.fontIcon1.Location = new System.Drawing.Point(6, 1);
+            this.fontIcon1.Location = new System.Drawing.Point(6, 0);
             this.fontIcon1.Name = "fontIcon1";
             this.fontIcon1.ResourceID = "search";
             this.fontIcon1.Size = new System.Drawing.Size(15, 15);

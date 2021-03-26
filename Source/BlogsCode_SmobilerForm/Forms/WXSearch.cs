@@ -35,12 +35,14 @@ namespace SelectDemo.Forms
             WXLayout uc = new WXLayout(type);
             DialogOptions footerDialogOptions;
             footerDialogOptions = new DialogOptions(LayoutJustifyAlign.FlexStart, System.Drawing.Color.Transparent, Smobiler.Core.Controls.Padding.Empty, true);
-            ShowDialog(uc, footerDialogOptions, (obj, args) =>
-            {
-                
-            });
+            ShowDialog(uc, footerDialogOptions, (obj, args) =>{ });
 
         }
+        /// <summary>
+        /// 搜索框文本改变事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void keyLab_TextChanged(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(keyLab.Text))

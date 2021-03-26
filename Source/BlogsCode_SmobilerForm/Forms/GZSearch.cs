@@ -62,6 +62,8 @@ namespace SelectDemo.Forms
             sds.Add(d2);
             sds.Add(d3);
             sds.Add(d4);
+
+           // 弹出GZLayput
             GZLayout uc = new GZLayout (sds,keyLab.Text);
             DialogOptions footerDialogOptions;
             footerDialogOptions = new DialogOptions(LayoutJustifyAlign.FlexStart, System.Drawing.Color.Transparent, Smobiler.Core.Controls.Padding.Empty, true);

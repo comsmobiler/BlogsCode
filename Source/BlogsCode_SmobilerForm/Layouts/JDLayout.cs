@@ -64,7 +64,7 @@ namespace SelectDemo.Layouts
                     Wrap = LayoutWrap.Wrap
                 };
                 if (data.ishow == true)
-                {   //添加删除按钮
+                {   //添加搜索历史删除按钮
                     ImageButton imgbtn = new ImageButton()
                     {
                         ImageType = ImageEx.ImageStyle.FontIcon,

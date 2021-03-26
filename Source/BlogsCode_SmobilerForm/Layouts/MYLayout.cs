@@ -57,7 +57,7 @@ namespace SelectDemo.Layouts
                         Padding = new Padding(12, 0, 12, 0)
                     };
                     p1.Controls.Add(label1);
-
+                    //刷新按钮
                     ImageButton imgbtn = new ImageButton()
                     {
                         ImageType = ImageEx.ImageStyle.FontIcon,
