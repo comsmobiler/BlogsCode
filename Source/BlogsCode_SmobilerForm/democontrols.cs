@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BlogsCode_SmobilerForm.SelectForm;
 using SelectDemo;
 using SelectDemo.Forms;
 using Smobiler.Core;
@@ -44,6 +45,11 @@ namespace BlogsCode_SmobilerForm
             grpBasic.Items.Add(new IconMenuViewItem("logon", "携程搜索") { Tag = typeof(XCSearch) });
 
             this.iconMenuView1.Groups.Add(grpBasic);
+            
+            IconMenuViewGroup grp1 = new IconMenuViewGroup("筛选");
+            grp1.Items.Add(new IconMenuViewItem("logon", "自如筛选") { Tag = typeof(ZRSelectForm) });
+            grp1.Items.Add(new IconMenuViewItem("logon", "饿了么筛选") { Tag = typeof(ElmSelectForm) });
+            this.iconMenuView1.Groups.Add(grp1);
         }
 
         private void title1_ImagePress(object sender, EventArgs e)

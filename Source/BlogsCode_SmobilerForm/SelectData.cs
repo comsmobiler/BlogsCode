@@ -9,9 +9,10 @@ namespace SelectDemo
     class SelectData
     {
         public String title { set; get; }
-    
         public String[] items { set; get;}
         public Boolean  ishow { set; get; }
-        
+        public Boolean isradio { set; get; }
+        public String type { set; get; }
+
     }
 }

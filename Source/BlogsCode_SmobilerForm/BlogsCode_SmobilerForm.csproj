@@ -315,7 +315,31 @@
     </Compile>
     <Compile Include="SelectData.cs" />
     <Compile Include="SelectDataPro.cs" />
+    <Compile Include="SelectForm\ElmSelectForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectForm\ElmSelectForm.designer.cs">
+      <DependentUpon>ElmSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectForm\ZRSelectForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectForm\ZRSelectForm.designer.cs">
+      <DependentUpon>ZRSelectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectItem.cs" />
+    <Compile Include="SelectLayout\ElmSelectLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectLayout\ElmSelectLayout.Designer.cs">
+      <DependentUpon>ElmSelectLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectLayout\ZRSelectLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectLayout\ZRSelectLayout.designer.cs">
+      <DependentUpon>ZRSelectLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="SmobilerForm1.cs">
       <SubType>Component</SubType>
@@ -460,6 +484,18 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectForm\ElmSelectForm.resx">
+      <DependentUpon>ElmSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectForm\ZRSelectForm.resx">
+      <DependentUpon>ZRSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLayout\ElmSelectLayout.resx">
+      <DependentUpon>ElmSelectLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLayout\ZRSelectLayout.resx">
+      <DependentUpon>ZRSelectLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SmobilerForm1.resx">
       <DependentUpon>SmobilerForm1.cs</DependentUpon>

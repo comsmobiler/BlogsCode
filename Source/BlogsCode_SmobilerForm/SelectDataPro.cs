@@ -9,20 +9,21 @@ namespace SelectDemo
 {
     class SelectDataPro
     {
-            public String title { set; get; }
-          
-            public String subtitle { set; get; }
-         
-            public String titleicon { set; get; }
+        public String title { set; get; }
 
-            public SelectItem[] items { set; get; }
+        public String subtitle { set; get; }
 
-            public Boolean ishow { set; get; }
+        public String titleicon { set; get; }
 
-            public int shape { set; get; }
+        public SelectItem[] items { set; get; }
 
-            public DataTable dataTable { set; get; }
+        public Boolean ishow { set; get; }
 
-        
+        public int shape { set; get; }
+
+        public DataTable dataTable { set; get; }
+        public String type { set; get; }
+
+
     }
 }

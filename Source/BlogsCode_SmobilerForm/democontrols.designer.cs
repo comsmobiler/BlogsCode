@@ -33,13 +33,13 @@ namespace BlogsCode_SmobilerForm
             // 
             // title1
             // 
+            this.title1.FontSize = 15F;
             this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             this.title1.Location = new System.Drawing.Point(45, 61);
             this.title1.Name = "title1";
             this.title1.ResourceID = "angle-left";
-            this.title1.Size = new System.Drawing.Size(100, 30);
-            this.title1.Text = "搜索";
-            this.title1.Visible = false;
+            this.title1.Size = new System.Drawing.Size(300, 30);
+            this.title1.Text = "搜索、筛选界面设计";
             this.title1.ImagePress += new System.EventHandler(this.title1_ImagePress);
             // 
             // democontrols
