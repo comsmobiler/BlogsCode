@@ -66,6 +66,12 @@
     <Compile Include="democontrols.designer.cs">
       <DependentUpon>democontrols.cs</DependentUpon>
     </Compile>
+    <Compile Include="demoMyForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="demoMyForm.Designer.cs">
+      <DependentUpon>demoMyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ABYSearch.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -301,6 +307,18 @@
       <DependentUpon>ListLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="MobileGlobal.cs" />
+    <Compile Include="MyForm\meiyou.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyForm\meiyou.designer.cs">
+      <DependentUpon>meiyou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyLayout\meiyouLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLayout\meiyouLayout.designer.cs">
+      <DependentUpon>meiyouLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -363,6 +381,9 @@
   <ItemGroup>
     <EmbeddedResource Include="democontrols.resx">
       <DependentUpon>democontrols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="demoMyForm.resx">
+      <DependentUpon>demoMyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ABYSearch.resx">
       <DependentUpon>ABYSearch.cs</DependentUpon>
@@ -480,6 +501,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListLayout.resx">
       <DependentUpon>ListLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\meiyou.resx">
+      <DependentUpon>meiyou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyLayout\meiyouLayout.resx">
+      <DependentUpon>meiyouLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

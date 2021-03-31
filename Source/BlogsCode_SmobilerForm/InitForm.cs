@@ -19,7 +19,8 @@ namespace BlogsCode_SmobilerForm
         {
             ListMenuViewGroup lg = new ListMenuViewGroup();
             lg.AddItem("logon", "窗体跳转","","");
-            lg.AddItem("logon", "搜索界面设计", "", "");
+            lg.AddItem("logon", "搜索、筛选界面设计", "", "");
+            lg.AddItem("logon", "个人主页界面设计", "", "");
             listMenuView1.Groups.Add(lg);
 
         }
@@ -31,8 +32,11 @@ namespace BlogsCode_SmobilerForm
                 case "窗体跳转":
                     this.Show(new SmobilerForm1());
                     break;
-                case "搜索界面设计":
+                case "搜索、筛选界面设计":
                     this.Show(new democontrols());
+                    break;
+                case "个人主页界面设计":
+                    this.Show(new demoMyForm());
                     break;
             }
         }
