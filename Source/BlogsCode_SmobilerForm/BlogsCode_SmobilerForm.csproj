@@ -313,11 +313,23 @@
     <Compile Include="MyForm\meiyou.designer.cs">
       <DependentUpon>meiyou.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyForm\zhihu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyForm\zhihu.designer.cs">
+      <DependentUpon>zhihu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyLayout\meiyouLayout.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="MyLayout\meiyouLayout.designer.cs">
       <DependentUpon>meiyouLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyLayout\zhihu1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLayout\zhihu1.designer.cs">
+      <DependentUpon>zhihu1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -504,6 +516,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm\meiyou.resx">
       <DependentUpon>meiyou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\zhihu.resx">
+      <DependentUpon>zhihu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyLayout\meiyouLayout.resx">
       <DependentUpon>meiyouLayout.cs</DependentUpon>
