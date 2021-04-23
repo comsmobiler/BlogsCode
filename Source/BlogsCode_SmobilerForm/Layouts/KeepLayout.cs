@@ -74,7 +74,7 @@ namespace SelectDemo.Layouts
                         ImageType = ImageEx.ImageStyle.FontIcon,
                         ResourceID = "trash-o",
                         IconColor = System.Drawing.Color.Silver,
-                        Size = new System.Drawing.Size(65, 25),
+                        Size = new System.Drawing.Size(85, 25),
                         ForeColor = System.Drawing.Color.Silver,
                         Text="清除记录",
                         ImageDirection= Smobiler.Core.Controls.Direction.Left,
@@ -110,7 +110,7 @@ namespace SelectDemo.Layouts
                         {// 带图标的按钮
                             Panel tem = new Panel()
                             {
-                                Size = new System.Drawing.Size(80, 30),
+                                Size = new System.Drawing.Size(0, 30),
                                 Layout = LayoutPosition.Relative,
                                 Direction = LayoutDirection.Row,
                                 Touchable = true,
@@ -123,7 +123,7 @@ namespace SelectDemo.Layouts
                             {
                                 ForeColor = System.Drawing.Color.OrangeRed,
                                 ResourceID = "md-flame",
-                                Size=new System.Drawing.Size(15,0),
+                                Size=new System.Drawing.Size(10,0),
                                 Margin=new Margin(0,0,4,0)
                             });
                             tem.Controls.Add(new Label()
@@ -131,7 +131,6 @@ namespace SelectDemo.Layouts
                                 Text = data.items[i],
                                 ForeColor = System.Drawing.Color.Gray,
                                 Size=new System.Drawing.Size(0,0)
-
                             });
                             tem.Tag = data.items[i];
                             tem.Press += this.SelectPanelPress;
