@@ -23,7 +23,7 @@ namespace SelectDemo
             this.imageButton6 = new Smobiler.Core.Controls.ImageButton();
             this.panel3 = new Smobiler.Core.Controls.Panel();
             this.fontIcon1 = new Smobiler.Core.Controls.FontIcon();
-            this.label1 = new Smobiler.Core.Controls.Label();
+            this.KeyLab = new Smobiler.Core.Controls.Label();
             this.imageButton7 = new Smobiler.Core.Controls.ImageButton();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.panel4 = new Smobiler.Core.Controls.Panel();
@@ -66,7 +66,7 @@ namespace SelectDemo
             this.panel3.BorderRadius = 4;
             this.panel3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.fontIcon1,
-            this.label1});
+            this.KeyLab});
             this.panel3.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
             this.panel3.Flex = 6;
             this.panel3.ItemAlign = Smobiler.Core.Controls.LayoutItemAlign.Center;
@@ -78,18 +78,18 @@ namespace SelectDemo
             // fontIcon1
             // 
             this.fontIcon1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.fontIcon1.Location = new System.Drawing.Point(6, 1);
+            this.fontIcon1.Location = new System.Drawing.Point(6, 0);
             this.fontIcon1.Name = "fontIcon1";
             this.fontIcon1.ResourceID = "search";
             this.fontIcon1.Size = new System.Drawing.Size(15, 15);
             // 
-            // label1
+            // KeyLab
             // 
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(12, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 0);
-            this.label1.Text = "清河";
+            this.KeyLab.ForeColor = System.Drawing.Color.Gray;
+            this.KeyLab.Location = new System.Drawing.Point(12, 0);
+            this.KeyLab.Name = "KeyLab";
+            this.KeyLab.Size = new System.Drawing.Size(0, 0);
+            this.KeyLab.Text = "清河";
             // 
             // imageButton7
             // 
@@ -217,7 +217,7 @@ namespace SelectDemo
         private Smobiler.Core.Controls.ImageButton imageButton6;
         private Smobiler.Core.Controls.Panel panel3;
         private Smobiler.Core.Controls.FontIcon fontIcon1;
-        private Smobiler.Core.Controls.Label label1;
+        private Smobiler.Core.Controls.Label KeyLab;
         private Smobiler.Core.Controls.ImageButton imageButton7;
         private Smobiler.Core.Controls.ListView listView1;
     }

@@ -26,6 +26,7 @@ namespace BlogsCode_SmobilerForm
             ListMenuViewGroup lg = new ListMenuViewGroup();
             lg.AddItem("logon", "个人主页-美柚", "", "");
             lg.AddItem("logon", "个人主页-知乎", "", "");
+            lg.AddItem("logon", "个人主页-脉脉", "", "");
             listMenuView1.Groups.Add(lg);
 
         }
@@ -40,7 +41,9 @@ namespace BlogsCode_SmobilerForm
                 case "个人主页-知乎":
                     this.Show(new zhihu());
                     break;
-
+                case "个人主页-脉脉":
+                    this.Show(new momo());
+                    break;
             }
         }
     }

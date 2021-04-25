@@ -313,6 +313,12 @@
     <Compile Include="MyForm\meiyou.designer.cs">
       <DependentUpon>meiyou.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyForm\momo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyForm\momo.designer.cs">
+      <DependentUpon>momo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyForm\zhihu.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -324,6 +330,24 @@
     </Compile>
     <Compile Include="MyLayout\meiyouLayout.designer.cs">
       <DependentUpon>meiyouLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyLayout\momo2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLayout\momo2.designer.cs">
+      <DependentUpon>momo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyLayout\momo3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLayout\momo3.designer.cs">
+      <DependentUpon>momo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyLayout\momo4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLayout\momo4.designer.cs">
+      <DependentUpon>momo4.cs</DependentUpon>
     </Compile>
     <Compile Include="MyLayout\zhihu1.cs">
       <SubType>Component</SubType>
