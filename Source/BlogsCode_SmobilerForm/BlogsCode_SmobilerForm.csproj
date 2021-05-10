@@ -307,6 +307,12 @@
       <DependentUpon>ListLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="MobileGlobal.cs" />
+    <Compile Include="MyForm\dedao.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyForm\dedao.designer.cs">
+      <DependentUpon>dedao.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyForm\meiyou.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -324,6 +330,12 @@
     </Compile>
     <Compile Include="MyForm\zhihu.designer.cs">
       <DependentUpon>zhihu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyLayout\dedao1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLayout\dedao1.designer.cs">
+      <DependentUpon>dedao1.cs</DependentUpon>
     </Compile>
     <Compile Include="MyLayout\meiyouLayout.cs">
       <SubType>Component</SubType>
@@ -375,6 +387,12 @@
     <Compile Include="SelectForm\ElmSelectForm.designer.cs">
       <DependentUpon>ElmSelectForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SelectForm\LGSelelctForm1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectForm\LGSelelctForm1.designer.cs">
+      <DependentUpon>LGSelelctForm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectForm\ZRSelectForm.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -387,6 +405,12 @@
     </Compile>
     <Compile Include="SelectLayout\ElmSelectLayout.Designer.cs">
       <DependentUpon>ElmSelectLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectLayout\LGSelectLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectLayout\LGSelectLayout.designer.cs">
+      <DependentUpon>LGSelectLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="SelectLayout\ZRSelectLayout.cs">
       <SubType>Component</SubType>
@@ -538,11 +562,17 @@
     <EmbeddedResource Include="ListLayout.resx">
       <DependentUpon>ListLayout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyForm\dedao.resx">
+      <DependentUpon>dedao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyForm\meiyou.resx">
       <DependentUpon>meiyou.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm\zhihu.resx">
       <DependentUpon>zhihu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyLayout\dedao1.resx">
+      <DependentUpon>dedao1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyLayout\meiyouLayout.resx">
       <DependentUpon>meiyouLayout.cs</DependentUpon>
@@ -559,6 +589,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectLayout\ElmSelectLayout.resx">
       <DependentUpon>ElmSelectLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLayout\LGSelectLayout.resx">
+      <DependentUpon>LGSelectLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectLayout\ZRSelectLayout.resx">
       <DependentUpon>ZRSelectLayout.cs</DependentUpon>
