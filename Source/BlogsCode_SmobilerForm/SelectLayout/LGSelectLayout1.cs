@@ -2,67 +2,37 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BlogsCode_SmobilerForm.SelectForm;
+using SelectDemo;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
 
-namespace SelectDemo
+namespace BlogsCode_SmobilerForm.SelectLayout
 {
     ////ToolboxItem用于控制是否添加自定义控件到工具箱，true添加，false不添加
     //[System.ComponentModel.ToolboxItem(true)]
-    partial class ZRSelectLayout : Smobiler.Core.Controls.MobileUserControl
+    partial class LGSelectLayout1 : Smobiler.Core.Controls.MobileUserControl
     {
-        public ZRSelectLayout() : base()
+        public LGSelectLayout1() : base()
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
         private string pressBtn;
-        public ZRSelectLayout(String btnName) : base()
+        public LGSelectLayout1(String btnName) : base()
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
             pressBtn = btnName;
         }
-        private void ZRSelectLayout_Load(object sender, EventArgs e)
-        {
-
-            if (String.IsNullOrEmpty(pressBtn) == false)
-            {
-                switch (pressBtn)
-                {
-                    case "imageButton1":
-                        imageButton1.ForeColor = System.Drawing.Color.Orange;
-                        break;
-                    case "imageButton2":
-                        imageButton2.ForeColor = System.Drawing.Color.Orange;
-                        break;
-                    case "imageButton3":
-                        imageButton3.ForeColor = System.Drawing.Color.Orange;
-                        break;
-                    case "imageButton4":
-                        imageButton4.ForeColor = System.Drawing.Color.Orange;
-                        break;
-                }
-            }
-        }
-
-        private void imageButton6_Press(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        //筛选分类按钮点击事件
-        private void imageButton1_Press(object sender, EventArgs e)
+        private void imageButton2_Press(object sender, EventArgs e)
         {
             ImageButton btn = (ImageButton)sender;
             if (btn.Name == pressBtn)
                 this.Close();
         }
-        /// <summary>
-        /// 确认按钮事件，在该事件中获取所有选中的筛选条件并传递给form
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void button2_Press(object sender, EventArgs e)
+     
+        private void button3_Press(object sender, EventArgs e)
         {
             string query1 = @"SELECT * FROM `testdata`";
             List<Query> queries = GetQueries(mianpanel);
@@ -74,37 +44,36 @@ namespace SelectDemo
             }
             else
                 querystr = query1;
-           ((ZRSelectForm)this.Form).ListBind(querystr);
+            ((LGSelectForm2)this.Form).ListBind(querystr);
             this.Close();
         }
-        /// <summary>
-        /// 重置按钮 点击事件
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void button1_Press(object sender, EventArgs e)
-        {
-            for (int j = 0; j < mianpanel.Controls.Count; j++)
-            {
-                //判断是否为panel控件
-                if (mianpanel.Controls[j].GetType().Name == "Panel")
-                {
-                    
-                    foreach (Button button in ((Panel)mianpanel.Controls[j]).Controls)
-                    {
-                        ((Button)button).ForeColor = System.Drawing.Color.Gray;
-                        ((Button)button).BorderColor = System.Drawing.Color.Gray;
-                        ((Button)button).Tag = false;
-                    }
 
+
+        private void SelectUC5_Load(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(pressBtn) == false)
+            {
+                switch (pressBtn)
+                {
+                    case "imageButton2":
+                        imageButton5.ForeColor = System.Drawing.Color.ForestGreen;
+                        break;
+                    case "imageButton3":
+                        imageButton2.ForeColor = System.Drawing.Color.ForestGreen;
+                        break;
+                    case "imageButton4":
+                        imageButton3.ForeColor = System.Drawing.Color.ForestGreen;
+                        break;
+                    case "imageButton5":
+                        imageButton4.ForeColor = System.Drawing.Color.ForestGreen;
+                        break;
+                    case "imageButton6":
+                        imageButton6.ForeColor = System.Drawing.Color.ForestGreen;
+                        break;
                 }
             }
         }
-        /// <summary>
-        /// 得到筛选语句，实际操作可以另写方法
-        /// </summary>
-        /// <param name="panels"></param>
-        /// <returns></returns>
+     
         private List<Query> GetQueries(Panel panels)
         {
             List<Query> queries = new List<Query>();
@@ -122,22 +91,22 @@ namespace SelectDemo
                         {
                             if ((bool)button.Tag)
                             {
-                                keyword = button.Text;//获取选中按钮的文本
-                                string querystr = "( " + panel.Name + " like '%" + keyword + "%'" + " )";//组查询语句
+                                keyword = button.Text;
+                                string querystr = "( " + panel.Name + " like '%" + keyword + "%'" + " )";
                                 queries.Add(new Query() { query = querystr, action = "and" });
                             }
                         }
-
+             
                     }
-                    else
-                    {   //多选按钮 查询语句组合
+                    else 
+                    {
                         List<Query> temp = new List<Query>();
                         string keyword = "";
                         foreach (Button button in panel.Controls)
                         {
                             if ((bool)button.Tag)
                             {
-                                keyword = button.Text;//获取选中按钮的文本
+                                keyword = button.Text;
                                 string querystr = panel.Name + " like '%" + keyword + "%'";
                                 temp.Add(new Query() { query = querystr, action = "or" });
                             }
@@ -151,7 +120,6 @@ namespace SelectDemo
 
             return queries;
         }
-
         private string GetQueryStr(List<Query> queries)
         {
             string result = "";
@@ -169,8 +137,41 @@ namespace SelectDemo
             }
             return result;
         }
+        private void button2_Press(object sender, EventArgs e)
+        {
+            for (int i = 0; i < mianpanel.Controls.Count; i++)
+            {
+                //判断是否为panel控件
+                if (mianpanel.Controls[i].GetType().Name == "Panel")
+                {
+                    foreach (Button button in ((Panel)mianpanel.Controls[i]).Controls)
+                    {
+                        button.ForeColor = button.BorderColor = System.Drawing.Color.Gray;
+                        button.Tag = false;
+                    }
+                }
+            }
+        }
 
-        
+        private void button1_Press(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void imageButton1_Press(object sender, EventArgs e)
+        {
+
+        }
+
+        private void slider1_ValueChanged(object sender, EventArgs e)
+        {
+            label2.Text = (slider1.Value * 10).ToString() + "k";
+        }
     }
-
+    //class Query
+    //{
+    //    public string query { set; get; }
+    //    public string action { set; get; }
+    //}
 }
+

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using BlogsCode_SmobilerForm.SelectForm;
+using SelectDemo;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
 
@@ -54,16 +55,16 @@ namespace BlogsCode_SmobilerForm.SelectLayout
                 switch (pressBtn)
                 {
                     case "imageButton2":
-                        imageButton5.ForeColor = System.Drawing.Color.Orange;
+                        imageButton5.ForeColor = System.Drawing.Color.ForestGreen;
                         break;
                     case "imageButton3":
-                        imageButton2.ForeColor = System.Drawing.Color.Orange;
+                        imageButton2.ForeColor = System.Drawing.Color.ForestGreen;
                         break;
                     case "imageButton4":
-                        imageButton3.ForeColor = System.Drawing.Color.Orange;
+                        imageButton3.ForeColor = System.Drawing.Color.ForestGreen;
                         break;
                     case "imageButton5":
-                        imageButton4.ForeColor = System.Drawing.Color.Orange;
+                        imageButton4.ForeColor = System.Drawing.Color.ForestGreen;
                         break;
                 }
             }
@@ -78,11 +79,10 @@ namespace BlogsCode_SmobilerForm.SelectLayout
                 {
                     foreach (Button button in ((Panel)mianpanel.Controls[i]).Controls)
                     {
-                        Panel panel = (Panel)mianpanel.Controls[i];
-                        ((Button)sender).ForeColor = ((Button)sender).BorderColor = System.Drawing.Color.Gray;
-                        ((Button)sender).Tag = false;
+                        button.ForeColor = button.BorderColor = System.Drawing.Color.Gray;
+                        button.Tag = false;
                     }
-               
+
                 }
             }
         }
@@ -152,7 +152,7 @@ namespace BlogsCode_SmobilerForm.SelectLayout
             return result;
         }
     }
-  
+
 
 }
 

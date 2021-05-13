@@ -235,9 +235,5 @@ namespace BlogsCode_SmobilerForm.SelectLayout
         }
 
     }
-    class Query
-    {
-        public string query { set; get; }
-        public string action { set; get; }
-    }
+
 }

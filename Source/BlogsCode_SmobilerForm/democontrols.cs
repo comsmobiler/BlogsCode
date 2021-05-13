@@ -50,6 +50,7 @@ namespace BlogsCode_SmobilerForm
             grp1.Items.Add(new IconMenuViewItem("logon", "自如筛选") { Tag = typeof(ZRSelectForm) });
             grp1.Items.Add(new IconMenuViewItem("logon", "饿了么筛选") { Tag = typeof(ElmSelectForm) });
             grp1.Items.Add(new IconMenuViewItem("logon", "拉勾筛选") { Tag = typeof(LGSelectForm1) });
+            grp1.Items.Add(new IconMenuViewItem("logon", "拉勾筛选2") { Tag = typeof(LGSelectForm2) });
 
             this.iconMenuView1.Groups.Add(grp1);
         }

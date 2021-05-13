@@ -387,6 +387,12 @@
     <Compile Include="SelectForm\ElmSelectForm.designer.cs">
       <DependentUpon>ElmSelectForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SelectForm\LGSelectForm2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectForm\LGSelectForm2.designer.cs">
+      <DependentUpon>LGSelectForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectForm\LGSelelctForm1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -411,6 +417,12 @@
     </Compile>
     <Compile Include="SelectLayout\LGSelectLayout.designer.cs">
       <DependentUpon>LGSelectLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectLayout\LGSelectLayout1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectLayout\LGSelectLayout1.designer.cs">
+      <DependentUpon>LGSelectLayout1.cs</DependentUpon>
     </Compile>
     <Compile Include="SelectLayout\ZRSelectLayout.cs">
       <SubType>Component</SubType>
@@ -584,6 +596,9 @@
     <EmbeddedResource Include="SelectForm\ElmSelectForm.resx">
       <DependentUpon>ElmSelectForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SelectForm\LGSelectForm2.resx">
+      <DependentUpon>LGSelectForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectForm\ZRSelectForm.resx">
       <DependentUpon>ZRSelectForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -592,6 +607,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectLayout\LGSelectLayout.resx">
       <DependentUpon>LGSelectLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLayout\LGSelectLayout1.resx">
+      <DependentUpon>LGSelectLayout1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectLayout\ZRSelectLayout.resx">
       <DependentUpon>ZRSelectLayout.cs</DependentUpon>
